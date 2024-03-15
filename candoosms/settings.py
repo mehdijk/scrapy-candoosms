@@ -1,4 +1,4 @@
-# Scrapy settings for eftekharazin project
+# Scrapy settings for candoosms project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'eftekharazin'
+BOT_NAME = 'candoosms'
 
-SPIDER_MODULES = ['eftekharazin.spiders']
-NEWSPIDER_MODULE = 'eftekharazin.spiders'
+SPIDER_MODULES = ['candoosms.spiders']
+NEWSPIDER_MODULE = 'candoosms.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'eftekharazin (+http://www.yourdomain.com)'
+#USER_AGENT = 'candoosms (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'eftekharazin.middlewares.EftekharazinSpiderMiddleware': 543,
+#    'candoosms.middlewares.candoosmsSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'eftekharazin.middlewares.EftekharazinDownloaderMiddleware': 543,
+#    'candoosms.middlewares.candoosmsDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'eftekharazin.pipelines.EftekharazinPipeline': 300,
+#    'candoosms.pipelines.candoosmsPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
