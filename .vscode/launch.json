@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/candoosms/spiders/candoosms.py",
+            "console": "integratedTerminal",
+            "args": [
+                "h0de80bdatj52kimnnuqn3jt96",
+                "1",
+                "3"
+            ],
+        }
+    ]
+}

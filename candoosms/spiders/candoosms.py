@@ -6,7 +6,7 @@ from scrapy.crawler import CrawlerProcess
 
 class CandoosmsSpider(scrapy.Spider):
     name = 'candoosms'
-    start_urls = ['http://my.candoosms.com/ms-sendbox']
+    start_urls = ['http://my.candoosms.com/ms-sendbox-o']
 
     def start_requests(self):
         cookie_value = getattr(self,'cookie','')
@@ -21,7 +21,7 @@ class CandoosmsSpider(scrapy.Spider):
         end = getattr(self,'e',3)
         for i in range(start,end+1): 
             print(f'Getting page {i}')
-            request = scrapy.Request(f'https://my.candoosms.com/ms-sendbox?useajax=true&rand={rand}&fid=&page={i}&order=outbound_message_id:DESC&filter=', 
+            request = scrapy.Request(f'https://my.candoosms.com/ms-sendbox-o?useajax=true&rand={rand}&fid=&page={i}&order=outbound_message_id:DESC&filter=', 
                 callback=self.extractTable,
                                     # errback=self.errback_httpbin,
                                     dont_filter=True,

@@ -1,2 +1,6 @@
 candoosms/__pycache__/
 candoosms/spiders/__pycache__/
+dist/
+build/
+candoosms.spec
+*.csv
